@@ -38,16 +38,16 @@ body, html{
     padding: 1em;
 } */
 
-body {
+/* body {
     margin: 0;
     display: grid;
     grid-template-rows: auto 50px;
 
     grid-template-areas: "content"
      "footer";
-}
+} */
 
-.content{
+/* .content{
     grid-area: content;
     justify-self: center;
     align-self: center; 
@@ -59,4 +59,33 @@ footer{
     grid-area: footer;
     padding: 10px;
     
+} */
+
+body {
+    margin: 0;
+
+    display: grid;
+    grid-template-rows: auto 50px;
+    grid-template-columns: 12% auto;
+    grid-template-areas:
+        "sidebar content"
+        "footer footer";
+}
+
+aside {
+    grid-area: sidebar;
+    background-color: gray;
+}
+
+/* This stuff below didn't change at all */
+
+.content {
+    grid-area: content; 
+    justify-self: center;
+    align-self: center;
+}
+footer {
+    grid-area: footer; 
+    background-color: lightgray;
+    padding:10px;
 }
