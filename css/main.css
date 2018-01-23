@@ -7,12 +7,12 @@ body, html{
 body {
     display: grid;
     grid-template-rows: auto;
+    grid-template-columns: auto auto auto;
     justify-items: center;
     align-items: center;
 }
 
 .container {
-    grid-column-start: 1;
     background: rgb(230, 230, 230);
     border-radius: 10px;
     padding: 1em;
